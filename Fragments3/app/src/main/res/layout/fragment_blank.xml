@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cb.android.fragments3.BlankFragment">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="vertical">
+       <TextView
+           android:text="Some Text"
+           android:layout_gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:textSize="40sp"
+           android:id="@+id/tv1"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv2"
+           android:layout_gravity="center_horizontal"
+           android:padding="10dp"
+           android:textSize="30sp"
+           android:text="Some more text"/>
+
+
+   </LinearLayout>
+
+</FrameLayout>

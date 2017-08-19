@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Some Course"
+        android:id="@+id/tv_playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Some Teacher"
+        android:id="@+id/tv_countryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="70dp"
+            android:text="Win-Loss : "
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="799-124"
+            android:id="@+id/tv_record"
+            android:layout_width="55dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Rank : "/>
+        <TextView
+            android:text="75"
+            android:id="@+id/tv_rank"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

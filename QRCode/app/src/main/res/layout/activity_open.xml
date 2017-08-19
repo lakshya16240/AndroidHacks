@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue"
+    tools:context="com.cb.android.qrcode.OpenActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:textSize="20sp"
+        android:text="New User?"
+        android:layout_alignBaseline="@+id/bv_signUp"
+        android:layout_alignBottom="@+id/bv_signUp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bv_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="182dp"
+        android:alpha="0.75"
+        android:text="Sign Up"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bv_login"
+        android:layout_alignBottom="@+id/bv_login"
+        android:layout_toLeftOf="@+id/bv_signUp"
+
+        android:layout_toStartOf="@+id/bv_signUp"
+        android:textSize="20sp"
+        android:text="Existing User?" />
+
+    <Button
+        android:id="@+id/bv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:alpha="0.75"
+        android:text="Login!"
+        android:layout_below="@+id/bv_signUp"
+        android:layout_alignLeft="@+id/bv_signUp"
+        android:layout_alignStart="@+id/bv_signUp" />
+</RelativeLayout>

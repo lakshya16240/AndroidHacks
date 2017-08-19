@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cb.android.farecalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/et_kms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Distance (in km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_kms"
+        android:layout_alignStart="@+id/et_kms"
+        android:layout_below="@+id/et_kms"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="Time ( in mins)"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="114dp"
+        android:text="FARE : "
+        android:id="@+id/textView3"
+        android:layout_below="@+id/et_time"
+        android:layout_alignLeft="@+id/et_time"
+        android:layout_alignStart="@+id/et_time" />
+
+    <TextView
+        android:id="@+id/tv_fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_time"
+        android:layout_alignRight="@+id/et_time"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/bv_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Calculate" />
+
+
+</RelativeLayout>
